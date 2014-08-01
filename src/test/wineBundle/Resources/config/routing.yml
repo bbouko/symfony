@@ -1,0 +1,15 @@
+testwine_acceuil:
+    path:     /collection/
+    defaults: { _controller: testwineBundle:Wine:index }
+testwine_voir:
+    path: /collection/voir/{id}
+    defaults: { _controller: testwineBundle:Wine:voir}
+testwine_ajouter:
+    path: /collection/ajouter
+    defaults: { _controller: testwineBundle:Wine:ajouter}
+testwine_modifier:
+    path: /collection/modifier/{id}
+    defaults: { _controller: testwineBundle:Wine:modifier}
+testwine_supprimer:
+    path: /collection/supprimer/{id}
+    defaults: { _controller: testwineBundle:Wine:supprimer}

@@ -1,0 +1,4 @@
+testwine:
+    resource: "@testwineBundle/Resources/config/routing.yml"
+    prefix:   /
+

@@ -1,0 +1,9 @@
+
+<ul>
+   
+<ul class="nav nav-pills nav-stacked">
+  {% for bouteille in liste_bouteilles %}
+    <li><a href="{{ path('testwine_voir', {'id': bouteille.id}) }}">{{ bouteille.nom }}</a></li>
+  {% endfor %}
+</ul>
+</ul>

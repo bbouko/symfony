@@ -1,0 +1,18 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+  Cave - {{ parent() }}
+{% endblock %}
+
+{% block body %}
+
+ 
+  <h1>Layout cave Bundle</h1>
+
+  <hr>
+
+  {# On définit un nouveau bloc, que les vues du bundle pourront remplir #}
+  {% block testwine_body %}
+  {% endblock %}
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "testwineBundle::layout.html.twig" %}
+
+{% block title %}
+ Visualisation d'une bouteille - {{ parent() }}
+{% endblock %}
+
+{% block testwine_body %}
+
+  <h2>{{ bouteille.nom }}</h2>
+  <i>blbalbal</i>
+
+  <div class="well">
+   fezfkjhezg ezf jezfjgez fghez 
+  </div>
+
+  <p>
+    <a href="{{ path('testwine_acceuil') }}" class="btn">
+      <i class="icon-chevron-left"></i>
+      Retour à la liste
+    </a>
+    <a href="{{ path('testwine_modifier', {'id': bouteille.id}) }}" class="btn">
+      <i class="icon-edit"></i>
+      Modifier la bouteille
+    </a>
+    <a href="{{ path('testwine_supprimer', {'id': bouteille.id}) }}" class="btn">
+      <i class="icon-trash"></i>
+      Supprimer la bouteille
+    </a>
+  </p>
+
+{% endblock %}

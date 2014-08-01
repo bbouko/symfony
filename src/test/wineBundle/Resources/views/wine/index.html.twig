@@ -1,0 +1,22 @@
+{% extends "testwineBundle::layout.html.twig" %}
+
+{% block title %}
+  Accueil - {{ parent() }}
+{% endblock %}
+
+{% block testwine_body %}
+
+  <h2>Liste des bouteilles</h2>
+
+  <ul>
+    {% for bouteille in bouteilles %}
+      <li>
+        <a href="{{ path('testwine_voir', {'id': bouteille.id}) }}">{{ bouteille.nom }}</a>
+       
+      </li>
+    {% else %}
+      <li>Pas (encore !) de bouteilles</li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}
